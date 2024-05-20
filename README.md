@@ -12,4 +12,5 @@ sudo chmod +x install_server.sh
 ```bash
 ./install_server.sh --hostname example.com
 ```
-### Если требуется указать порт для ключей в добавок вписываем параметр ```--keys-port```
+### Если требуется указать порт для ключей в добавок вписываем параметр ```bash
+--keys-port```
