@@ -1,5 +1,5 @@
 # Установка Outline с динамическим ключом и обходом блокировки
-## Нам понядобиться доменное имя
+## Нам потребуется доменное имя
 ### Скачиваем скрипт
 ```bash
 sudo wget https://raw.githubusercontent.com/neon0ff/outline/main/install_server.sh
