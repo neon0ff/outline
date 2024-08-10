@@ -29,7 +29,7 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```bash
 sudo apt install nginx
 ```
-### Ставим сертефикат
+### Ставим сертификат
 ```bash
 sudo certbot --nginx
 ```
@@ -37,7 +37,7 @@ sudo certbot --nginx
 ```bash
 sudo nano /etc/nginx/sites-available/default
 ```
-### Переходим на 118 строку комбинацией клавиш ```Ctrl + /``` и редактируем что бы было как ниже
+### Переходим на 118 строку комбинацией клавиш ```Ctrl + /``` и редактируем чтобы было как ниже
 ```bash
         location / {
                 add_header Access-Control-Allow-Origin *;
@@ -46,7 +46,7 @@ sudo nano /etc/nginx/sites-available/default
                 try_files $uri $uri/ =404;
         }
 ```
-### Далее смотрим данные ключей м записывем их
+### Далее смотрим данные ключей и записывем их
 ```bash
 sudo nano /opt/outline/persisted-state/outline-ss-server/config.yml
 ```
@@ -54,7 +54,7 @@ sudo nano /opt/outline/persisted-state/outline-ss-server/config.yml
 ```bash
 sudo nano /var/www/html/vpn.json
 ```
-### Далее заполняем его в таком формате, соттветственно заполнив 3 первые строки своими данными
+### Далее заполняем его в таком формате, соответственно заполнив 3 первые строки своими данными
 ```bash
 {
   "server": "example.cpm",
@@ -68,6 +68,6 @@ sudo nano /var/www/html/vpn.json
 ```bash
 sudo systemctl restart nginx.service
 ```
-### Дальше захлжим на наш домен и убедждаемся что можем открыть json. Ссылка в нашем случае будет выглядить примерно так
+### Дальше заходим на наш домен и убеждаемся что можем открыть json. Ссылка в нашем случае будет выглядеть примерно так
 ### https://example.com/vpn.json
-### Нам остается передалть ссыку под формат ssconf://example.com/vpn.json и вбить её в Outline Client
+### Нам остается переделать ссыку под формат ssconf://example.com/vpn.json и вбить её в Outline Client
