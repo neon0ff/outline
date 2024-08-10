@@ -70,4 +70,5 @@ sudo systemctl restart nginx.service
 ```
 ### Дальше заходим на наш домен и убеждаемся что можем открыть json. Ссылка в нашем случае будет выглядеть примерно так
 ### https://example.com/vpn.json
-### Нам остается переделать ссыку под формат ssconf://example.com/vpn.json и вбить её в Outline Client
+### Нам остается переделать ссылку под формат ssconf://example.com/vpn.json и вбить её в Outline Client
+
